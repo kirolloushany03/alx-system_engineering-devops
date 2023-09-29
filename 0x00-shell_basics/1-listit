@@ -1,3 +1,6 @@
 #!/bin/bash
-ls
+
+# Display the first two items in the current directory
+ls -1 | head -2
+
 
