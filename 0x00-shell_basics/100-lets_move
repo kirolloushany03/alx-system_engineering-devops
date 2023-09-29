@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -n [A-Z]* ..
+mv [A-Z]* /tmp/u
