@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Display the first two items in the current directory
-ls -1 | head -2
+# Display the contents list of the current directory in a single line
+ls -1 | tr '\n' ' '
+echo
 
 
