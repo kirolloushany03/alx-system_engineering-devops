@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$(( ( $(printf "%d" "$(echo "$WATER" | tr -cd 'water' | tr 'water' '01234')" ) + $(printf "%d" "$(echo "$STIR" | tr -cd 'stir.' | tr 'stir.' '01234')") ) )) && printf "%o\n" "$result" | tr '01234567' 'bestchol'
+printf "%o" $((10#${WATER} + 10#${STIR}))
