@@ -1,2 +1,2 @@
 #!/bin/bash
-printenv -a
+(printenv; set) | sort | less
