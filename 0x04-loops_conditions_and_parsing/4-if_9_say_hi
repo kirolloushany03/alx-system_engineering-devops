@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#printing "Hi" only in 8th iteration and the left print "Best school" 
+i=1
+while [ $i -le 10  ]
+do
+    if [ $i -eq 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((i++))
+done
