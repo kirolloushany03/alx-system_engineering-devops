@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# In between every I am alive! message, the program should pause for 2 seconds
+# Manage my process
 
 if [ "${1}" == "start" ]
 then
