@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# this code is made to making connecting to any server easy
+
+# the user var
+server_name="ubuntu"
+# the ip or the localhost var
+localhost="54.237.107.23"
+
+# the script is here:
+ssh -i ~/.ssh/school "$server_name"@"$localhost"
