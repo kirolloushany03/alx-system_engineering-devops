@@ -4,7 +4,7 @@
 # the user var
 server_name="ubuntu"
 # the ip or the localhost var
-localhost="54.237.107.23"
+localhost="54.237.69.219"
 
 # the script is here:
 ssh -i ~/.ssh/school "$server_name"@"$localhost"
