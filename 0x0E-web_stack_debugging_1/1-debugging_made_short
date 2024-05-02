@@ -3,6 +3,8 @@
 # sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 # service nginx restart
 # echo "" > /run/nginx.pid
-sudo rm -f /etc/nginx/sites-enabled/default
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx stop
+#!/usr/bin/env bash
+# Bash script that configures and fix a server
+ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+kill "$(pgrep 'nginx' | head -1)"
