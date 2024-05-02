@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configures Nginx to run and listen on port 80 in an Ubuntu container
+# installs nginx and starts it
 sudo apt-get update
 sudo apt-get -y install nginx
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/

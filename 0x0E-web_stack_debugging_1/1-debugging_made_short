@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Config Nginx to run and listen on port 80.
+# installs appache and starts it
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
-echo "meto" >/var/run/nginx.pid
+echo "meto" > /var/run/nginx.pid
