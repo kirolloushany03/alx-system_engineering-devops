@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 # Config Nginx to run and listen on port 80.
-# sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-# service nginx restart
-# echo "" > /run/nginx.pid
-#!/usr/bin/env bash
-# Bash script that configures and fix a server
-ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx restart
-kill "$(pgrep 'nginx' | head -1)"
+echo "" >/run/nginx.pid
