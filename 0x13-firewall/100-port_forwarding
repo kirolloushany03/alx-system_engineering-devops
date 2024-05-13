@@ -6,8 +6,9 @@
 #   ufw-before-input
 #   ufw-before-output
 #   ufw-before-forward
-#
 
+#and in this part we will redirect the port 8080/Tcp to port 80/Tcp
+#so when will trying to connect to port 8080 so he will goes to prote 80
 *nat
 :PREROUTING ACCEPT [0:0]
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
