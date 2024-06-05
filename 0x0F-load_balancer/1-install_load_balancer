@@ -42,7 +42,7 @@ frontend kiroclick-tech-frontend
 backend kiroclick-tech-backend
     balance roundrobin
     server 530941-web-01 54.144.133.80:80 check
-    server 530941-web-02 100.25.170.2:80 check
+    server 530941-web-02 54.237.53.103:80 check
 "
 
 # shellcheck disable=SC2154
